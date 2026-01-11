@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BeerType" load_steps=2 format=3 uid="uid://b4vqlck7xo4dv"]
+
+[ext_resource type="Script" uid="uid://b0xa1ruda1lx3" path="res://managers/models/beer_type.gd" id="1_g0i3y"]
+
+[resource]
+script = ExtResource("1_g0i3y")
+name = "Lager"
+hop = 250
+barley = 20000
+water = 140
+yeast = 150
+metadata/_custom_type_script = "uid://b0xa1ruda1lx3"
