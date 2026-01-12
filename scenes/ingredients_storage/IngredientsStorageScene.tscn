@@ -20,8 +20,10 @@ grow_vertical = 2
 
 [node name="ItemsContainer" type="VBoxContainer" parent="Panel"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 80.0
+offset_bottom = 178.0
 
 [node name="Title" type="Label" parent="Panel/ItemsContainer"]
 layout_mode = 2

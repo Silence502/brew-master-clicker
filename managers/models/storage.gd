@@ -1,34 +1,39 @@
-class_name Storage extends Resource
+extends Node
 
 # Ce signal sera émis à chaque changement d'inventaire
 signal inventory_changed
 
 var _is_mass_updating: bool = false
 
-@export var hop: int = 100:
+@export var hop: int = 100000:
 	set(value):
 		hop = value
-		inventory_changed.emit()
+		if not _is_mass_updating:
+			inventory_changed.emit()
 
-@export var barley: int = 100:
+@export var barley: int = 1000000:
 	set(value):
 		barley = value
-		inventory_changed.emit()
+		if not _is_mass_updating:
+			inventory_changed.emit()
 
-@export var water: int = 100:
+@export var water: int = 100000:
 	set(value):
 		water = value
-		inventory_changed.emit()
+		if not _is_mass_updating:
+			inventory_changed.emit()
 
-@export var wheat: int = 100:
+@export var wheat: int = 100000:
 	set(value):
 		wheat = value
-		inventory_changed.emit()
+		if not _is_mass_updating:
+			inventory_changed.emit()
 
-@export var yeast: int = 100:
+@export var yeast: int = 100000:
 	set(value):
 		yeast = value
-		inventory_changed.emit()
+		if not _is_mass_updating:
+			inventory_changed.emit()
 
 # Fonction utilitaire pour vérifier si on a assez de stock
 func has_ingredients(recipe: BeerType) -> bool:
@@ -56,7 +61,5 @@ func consume(recipe: BeerType) -> void:
 		
 		# 4. On émet UN SEUL signal pour tout le monde
 		inventory_changed.emit()
-		
-		print("storage.gd : ", hop)
 	else:
 		push_warning("Pas assez de stock !")
