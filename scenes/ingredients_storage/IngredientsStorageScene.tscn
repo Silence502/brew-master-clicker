@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfblti08f3euq"]
+
+[ext_resource type="Script" uid="uid://d2yv32tkmlpcr" path="res://scenes/ingredients_storage/ingredients_storage_scene.gd" id="1_lw0b2"]
+
+[node name="IngredientsStorage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lw0b2")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 200.0
+grow_vertical = 2
+
+[node name="ItemsContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Storage"
+
+[node name="HopStorageLabel" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Hop: "
+
+[node name="BarleyStorageLabel" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Barley: "
+
+[node name="WheatStorageLabel" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Barley: "
+
+[node name="WaterStorageLabel" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Barley: "
+
+[node name="YeastStorageLabel" type="Label" parent="Panel/ItemsContainer"]
+layout_mode = 2
+text = "Barley: "

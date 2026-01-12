@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Storage" load_steps=2 format=3 uid="uid://cq823scbvomaq"]
+
+[ext_resource type="Script" uid="uid://vl32ujvdrqpi" path="res://managers/models/storage.gd" id="1_uchjf"]
+
+[resource]
+script = ExtResource("1_uchjf")
+hop = 5000
+barley = 100000
+water = 10000
+yeast = 500
+metadata/_custom_type_script = "uid://vl32ujvdrqpi"
