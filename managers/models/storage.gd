@@ -23,7 +23,7 @@ var _is_mass_updating: bool = false
 		if not _is_mass_updating:
 			inventory_changed.emit()
 
-@export var wheat: int = 100000:
+@export var wheat: int = 1000000:
 	set(value):
 		wheat = value
 		if not _is_mass_updating:
