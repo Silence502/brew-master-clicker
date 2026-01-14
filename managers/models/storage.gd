@@ -1,6 +1,5 @@
 extends Node
 
-# Ce signal sera émis à chaque changement d'inventaire
 signal inventory_changed
 
 var _is_mass_updating: bool = false
